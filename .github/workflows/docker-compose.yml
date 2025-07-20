@@ -1,0 +1,8 @@
+version: "3"
+services:
+  web:
+    build: .
+    container_name: octabyte-python-app
+    ports:
+      - "5000:5000"
+    command: python3 app.py
